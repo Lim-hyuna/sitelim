@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/7bffd4e0f6.js" crossorigin="anonymous"></script>
 	<title>네이버 검색창 예제</title>
 	<style>
 		.search-box{
@@ -15,7 +16,7 @@
 			width: 400px; height: 30px;
 			position: absolute;
 			top: calc(50% - 15px - 2px); left: 10px; 
-			background: yellow; border: none;
+			 border: none;
 		}
 		.search-btn{
 			width: 50px; height: 50px; box-sizing: border-box;
@@ -36,7 +37,7 @@
 			width: 400px; height: 30px;
 			position: absolute;
 			top: calc(50% - 15px); left: 12px; 
-			background: yellow; border: none;
+			 border: none;
 		}
 		.search-btn2{
 			width: 50px; height: 50px; box-sizing: border-box;
@@ -44,12 +45,19 @@
 			top: 0px; right: 0px; border-radius: 2px;
 			border: none;
 		}
+		.search-input:focus,
+		.search-input2:focus{
+			outline: none;
+		}
+		.fa-solid{
+			font-size: 30px; color: white; line-height: 50px;
+		}
 	</style>
 </head>
 <body>
 	<form action="" class="search-box">
 		<input type="text" name="query" class="search-input">
-		<button type="submit" class="search-btn"></button>
+		<button type="submit" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
 	</form>
 	<form action="" class="search-form2">
 		<div class="search-box2">

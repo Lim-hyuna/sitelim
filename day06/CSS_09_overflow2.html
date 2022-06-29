@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>말줄임 예제</title>
+	<style>
+		.box1{
+			width: 300px; height: 50px; line-height: 50px;
+			white-space: nowrap; overflow: hidden;
+			text-overflow: ellipsis;
+			border: 1px solid black;
+			margin-bottom: 10px;
+		}
+		.box2{
+			width: 300px; height: 150px; line-height: 50px;
+			display: -webkit-box; /* webkit : 크롬 최적화 */
+			-webkit-line-clamp: 3; 
+			-webkit-box-orient: vertical;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+	<div class="box1">지난해 9월에는 한 아파트 입주민이 "내 집에서 피우는 거니 그쪽들이 좀 참으면 되지 않는가"라고 적은 호소문의 사진이 올라왔다. 같은 해 6월에는 화장실에서 흡연하지 말라고 부탁하는 협조문에 "베란다, 욕실은 어디까지나 개인 공간이다. 좀 더 고가의 아파트로 이사를 가라"는 반박 메모가 붙었다는 내용의 글이 게시되기도 했다.</div>
+	<div class="box2">지난해 9월에는 한 아파트 입주민이 "내 집에서 피우는 거니 그쪽들이 좀 참으면 되지 않는가"라고 적은 호소문의 사진이 올라왔다. 같은 해 6월에는 화장실에서 흡연하지 말라고 부탁하는 협조문에 "베란다, 욕실은 어디까지나 개인 공간이다. 좀 더 고가의 아파트로 이사를 가라"는 반박 메모가 붙었다는 내용의 글이 게시되기도 했다.</div>
+</body>
+</html>

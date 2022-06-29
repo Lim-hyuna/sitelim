@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>예제 : 박스배치01</title>
+	<style>
+		.box{
+			width: 500px; height: 300px; background-color: blue;
+		}
+		.box1{ position: relative; }
+		.box1>.inner-box{
+			width: 480px; height: 280px; background-color: red;
+			position: absolute;
+			left: 10px; top: 10px; 
+		}
+	</style>
+</head>
+<body>
+	<div class="box box1">
+		<div class="inner-box"></div>
+	</div>
+</body>
+</html>
